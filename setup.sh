@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Move to infra path
-cd infra
+cd infra/terraform
 
 # Terraform commands
 terraform init
