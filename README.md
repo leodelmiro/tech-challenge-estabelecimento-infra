@@ -31,7 +31,7 @@ Este repositório é referente a Infra do repositório (Centralizando a subida p
 
 ### Infra AWS
 
-![Tech Challenge Drawio Infra](./desenhos/infraawsdrawio.png)
+![Tech Challenge Drawio Infra](img.png)
 
 ## Estrutura do Projeto
 
