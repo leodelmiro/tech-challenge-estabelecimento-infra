@@ -11,7 +11,7 @@ variable "vpcCidr" {
 }
 
 variable "instanceType" {
-  default = "t3.micro"
+  default = "t3a.medium"
 }
 
 variable "accessConfig" {
@@ -34,3 +34,6 @@ variable "eksNodeMaxSize" {
   default = 2
 }
 
+variable "policyArn" {
+  default = "arn:aws:eks::aws:cluster-access-policy/AmazonEKSClusterAdminPolicy"
+}
