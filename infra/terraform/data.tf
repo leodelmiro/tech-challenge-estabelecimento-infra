@@ -19,3 +19,10 @@ data "aws_subnet" "subnet" {
   for_each = toset(data.aws_subnets.subnets.ids)
   id       = each.value
 }
+
+data "aws_instance" "ec2" {
+  filter {
+    name = "tag:eks:nodegroup-name"
+    values = ["NG-${var.projectName}"]
+  }
+}
