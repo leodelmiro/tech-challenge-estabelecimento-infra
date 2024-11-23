@@ -14,7 +14,7 @@
 Aplicação se trata de um Projeto Fiap Tech Challenge - Software Architecture, simulando um projeto de um estabelecimento
 de pedidos (fast-food).
 
-Este repositório é referente a Infra do repositório (Centralizando a subida para AWS da aplicação).
+Este repositório é referente a Infra do repositório (EKS, ALB, SG, TG).
 
 ### Demais repositórios
 - https://github.com/leodelmiro/tech-challenge-estabelecimento-app
