@@ -16,7 +16,15 @@ resource "aws_security_group" "sg" {
     from_port   = 0
     to_port     = 0
     protocol    = "-1"
-    cidr_blocks = ["172.31.0.0/16"]
+    cidr_blocks = ["172.31.0.0/20"]
+  }
+
+  ingress {
+    description = "NodePort"
+    from_port   = 30080
+    to_port     = 30080
+    protocol    = "tcp"
+    cidr_blocks = [for subnet_id in data.aws_subnets.subnets.ids : data.aws_subnet.subnet[subnet_id].cidr_block]
   }
 
   egress {
