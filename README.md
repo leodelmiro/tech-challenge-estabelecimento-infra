@@ -20,6 +20,7 @@ Este repositório é referente a Infra do repositório (Centralizando a subida p
 - https://github.com/leodelmiro/tech-challenge-estabelecimento-app
 - https://github.com/leodelmiro/tech-challenge-estabelecimento-db
 - https://github.com/leodelmiro/tech-challenge-estabelecimento-lambda-authorizer
+- https://github.com/leodelmiro/tech-challenge-estabelecimento-gtw
 
 ## Tecnologias Utilizadas
 
@@ -34,6 +35,11 @@ Este repositório é referente a Infra do repositório (Centralizando a subida p
 ![Tech Challenge Drawio Infra](img.png)
 
 ## Estrutura do Projeto
+
+- .github: Arquivos com as actions.
+- Desenhos: Arquivos relacionados aos desenhos do projeto.
+- Infra: Arquivos terraform para criação do banco de dados.
+   - terraform: Arquivos de criação do EKS e ECR.
 
 ## Rodando o Projeto Local
 
