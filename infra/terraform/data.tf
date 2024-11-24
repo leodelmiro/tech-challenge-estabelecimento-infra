@@ -28,3 +28,11 @@ data "aws_instance" "ec2" {
     values = ["NG-${var.projectName}"]
   }
 }
+
+data "aws_security_group" "sg-eks" {
+  depends_on = [aws_eks_node_group.node-group]
+
+  tags = {
+    "aws:eks:cluster-name" = "tech-fiap-app"
+  }
+}
