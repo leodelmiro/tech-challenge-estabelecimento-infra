@@ -35,3 +35,12 @@ resource "aws_security_group" "sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
+
+resource "aws_security_group_rule" "ingress-sg-eks" {
+  type              = "ingress"
+  from_port         = 30080
+  to_port           = 30080
+  protocol          = "tcp"
+  cidr_blocks       = [for subnet_id in data.aws_subnets.subnets.ids : data.aws_subnet.subnet[subnet_id].cidr_block]
+  security_group_id = data.aws_security_group.sg-eks.id
+}
