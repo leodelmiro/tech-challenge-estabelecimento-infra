@@ -2,9 +2,10 @@
 
 # Índice
 
-* [Breve Descrição](#Breve-Descrição)
-* [Tecnologias Utilizadas](#Tecnologias-Utilizadas)
 * [Índice](#índice)
+* [Breve Descrição](#Breve-Descrição)
+* [Demais repositórios](#Demais-repositórios)
+* [Tecnologias Utilizadas](#Tecnologias-Utilizadas)
 * [Desenho Solução](#Desenho-Solução)
 * [Estrutura do Projeto](#Estrutura-do-Projeto)
 * [Rodando o Projeto Local](#Rodando-o-Projeto-Local)
