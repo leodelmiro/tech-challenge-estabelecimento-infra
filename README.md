@@ -18,7 +18,10 @@ de pedidos (fast-food).
 Este repositório é referente a Infra do repositório (Centralizando a subida para AWS da aplicação).
 
 ### Demais repositórios
-- https://github.com/leodelmiro/tech-challenge-estabelecimento-app
+- https://github.com/leodelmiro/tech-challenge-estabelecimento-pagamento
+- https://github.com/leodelmiro/tech-challenge-estabelecimento-pedido
+- https://github.com/leodelmiro/tech-challenge-estabelecimento-cliente
+- https://github.com/leodelmiro/tech-challenge-estabelecimento-produto
 - https://github.com/leodelmiro/tech-challenge-estabelecimento-db
 - https://github.com/leodelmiro/tech-challenge-estabelecimento-lambda-authorizer
 - https://github.com/leodelmiro/tech-challenge-estabelecimento-gtw
@@ -33,7 +36,7 @@ Este repositório é referente a Infra do repositório (Centralizando a subida p
 
 ### Infra AWS
 
-![Tech Challenge Drawio Infra](img.png)
+![Tech Challenge Drawio Infra](./desenhos/arquitetura.png)
 
 ## Estrutura do Projeto
 
