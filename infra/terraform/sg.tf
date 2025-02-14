@@ -22,7 +22,7 @@ resource "aws_security_group" "sg" {
   ingress {
     description = "NodePort"
     from_port   = 30080
-    to_port     = 30080
+    to_port     = 30083
     protocol    = "tcp"
     cidr_blocks = [for subnet_id in data.aws_subnets.subnets.ids : data.aws_subnet.subnet[subnet_id].cidr_block]
   }
@@ -39,7 +39,7 @@ resource "aws_security_group" "sg" {
 resource "aws_security_group_rule" "ingress-sg-eks" {
   type              = "ingress"
   from_port         = 30080
-  to_port           = 30080
+  to_port           = 30083
   protocol          = "tcp"
   cidr_blocks       = [for subnet_id in data.aws_subnets.subnets.ids : data.aws_subnet.subnet[subnet_id].cidr_block]
   security_group_id = data.aws_security_group.sg-eks.id
