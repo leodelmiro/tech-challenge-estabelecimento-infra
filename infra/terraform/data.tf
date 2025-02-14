@@ -27,6 +27,11 @@ data "aws_instance" "ec2" {
     name   = "tag:eks:nodegroup-name"
     values = ["NG-${var.projectName}"]
   }
+
+  filter {
+    name   = "instance-state-name"
+    values = ["running"]
+  }
 }
 
 data "aws_security_group" "sg-eks" {
